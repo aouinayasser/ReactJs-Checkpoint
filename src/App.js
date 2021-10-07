@@ -1,45 +1,26 @@
 import './App.css';
-import { Form, Button, Navbar, Container, Nav, Stack } from 'react-bootstrap';
+import imageInSrc from "./image/imageInSrc.png"
 
 function App() {
   return (
-    <div className="App">
+  <div style={{border:'solid 1px black',maxWidth:'100vw'}}>
 
-  <Navbar bg="dark" variant="dark">
-    <Container>
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar>
+      <h1 className="title red">Your name here</h1>
 
-      <Form>
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text>
-  </Form.Group>
+      <br />
 
-  <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
-  </Form.Group>
-    <Stack gap={2} className="col-md-5 mx-auto">
-    <Button variant="secondary">Save changes</Button>
-    <Button variant="outline-secondary">Cancel</Button>
-  </Stack>
-</Form>
+      <img src={imageInSrc} />
 
+      <br />
 
-    </div>
+      <img src="/imageInPublic.png" />
+
+      <video width="320" height="240" controls>
+      
+      <source src="/myVideo.mp4" type="video/mp4" />
+
+      </video>
+  </div>
   );
 }
 
